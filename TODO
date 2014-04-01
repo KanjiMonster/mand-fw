@@ -1,0 +1,12 @@
+Things still missing/need to be done
+
+* Test SCP/HTTP(s) with certificate authentication
+
+* Update progress for HTTP(s)/FTP downloads
+
+* Expose firmware-job(s) in DB
+
+* Properly read out the firmware slots and their state
+
+* Fix image verification (find out why it won't work)
+
