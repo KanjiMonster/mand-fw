@@ -415,7 +415,7 @@ int32_t firmware_commit(int32_t job_id)
 	if (job->job.install_target) {
 		return vasystem("/sbin/sysupgrade -t %s %s/image-%i &", job->job.install_target, DL_PATH, job->job.job_id);
 	} else {
-		return vasystem("/sbin/sysupgrade %s/image-%i &", DL_PATH, job->job.job_id);
+		return vasystem("/sbin/sysupgrade %s/image-%i 2>&1 >/dev/null &", DL_PATH, job->job.job_id);
 	}
 }
 
